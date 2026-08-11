@@ -52,7 +52,7 @@ User (React) → FastAPI Backend → Orchestrator Agent → {Billing | Technical
 
 ### In progress
 
-- Branch `feature/ai-phase0-adrs` active — ready to push and open Pull Request for D3 & D4.
+- Preparing Spec AI-1 (Data Ingestion & ChromaDB Pipeline) & Spec M1 (Local dev environment).
 
 ### What was learned
 
