@@ -20,12 +20,12 @@ Every ADR follows this structure:
 
 ## Index
 
-| # | Title | Status | Date |
-|---|---|---|---|
-| [0001](./0001-use-gemini-free-tier.md) | Use Google Gemini Free Tier as Primary LLM | Accepted | 2026-08-11 |
-| 0002 | SQLite over Postgres for zero-overhead development | *to write* | — |
-| 0003 | RAG over fine-tuning (no GPU required) | *to write* | — |
-| 0004 | LangGraph for multi-agent orchestration | *to write* | — |
+| # | Title | Status | Date | File |
+|---|---|---|---|---|
+| [0001](./0001-use-gemini-free-tier.md) | Use Google Gemini Free Tier as Primary LLM | 🟩 Accepted | 2026-08-11 | [`./0001-use-gemini-free-tier.md`](./0001-use-gemini-free-tier.md) |
+| 0002 | SQLite over Postgres for zero-overhead development | ⬜ To write (SWE) | — | — |
+| [0003](./0003-rag-over-finetuning.md) | RAG over Fine-Tuning for Customer Support Knowledge Base | 🟩 Accepted | 2026-08-11 | [`./0003-rag-over-finetuning.md`](./0003-rag-over-finetuning.md) |
+| [0004](./0004-langgraph-orchestration.md) | LangGraph for Multi-Agent Orchestration & Memory | 🟩 Accepted | 2026-08-11 | [`./0004-langgraph-orchestration.md`](./0004-langgraph-orchestration.md) |
 
 ## Relationship to Specs
 

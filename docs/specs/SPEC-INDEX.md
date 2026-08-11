@@ -6,7 +6,7 @@
 >
 > **Companion to:** [`../DELIVERY-PLAN.md`](../DELIVERY-PLAN.md) (what specs implement) · [`TEMPLATE.md`](./TEMPLATE.md) (how to write a spec)
 
-**Snapshot date:** 2026-08-11 (project initialization)
+**Snapshot date:** 2026-08-11 (ADR-0003 & ADR-0004 accepted)
 
 ---
 
@@ -23,9 +23,9 @@
 | # | Title | Status | Date | File |
 |---|---|---|---|---|
 | **ADR-0001** | Use Google Gemini Free Tier as Primary LLM | 🟩 Accepted | 2026-08-11 | [`../adr/0001-use-gemini-free-tier.md`](../adr/0001-use-gemini-free-tier.md) |
-| **ADR-0002** | SQLite over Postgres for zero-overhead development | ⬜ To write | — | — |
-| **ADR-0003** | RAG over fine-tuning (no GPU required) | ⬜ To write | — | — |
-| **ADR-0004** | LangGraph for multi-agent orchestration | ⬜ To write | — | — |
+| **ADR-0002** | SQLite over Postgres for zero-overhead development | ⬜ To write (SWE) | — | — |
+| **ADR-0003** | RAG over Fine-Tuning for Customer Support Knowledge Base | 🟩 Accepted | 2026-08-11 | [`../adr/0003-rag-over-finetuning.md`](../adr/0003-rag-over-finetuning.md) |
+| **ADR-0004** | LangGraph for Multi-Agent Orchestration & Memory | 🟩 Accepted | 2026-08-11 | [`../adr/0004-langgraph-orchestration.md`](../adr/0004-langgraph-orchestration.md) |
 
 ---
 
@@ -81,11 +81,3 @@ ADR-0004 ─┘        │
                     │                                        ├──▶ INT-1 ──┬──▶ EVAL-1
                     └──▶ WEB-1 ──────────────────────────────┘            └──▶ DEPLOY-1
 ```
-
----
-
-## How to Use This Index
-
-- **Before opening a spec:** check its Status column (don't expect detail from a ⬜ spec).
-- **Before writing a spec:** check its Prereqs are 🟩 done.
-- **When a spec's status changes:** update both this file and `DELIVERY-STATUS.md` in the same commit.
