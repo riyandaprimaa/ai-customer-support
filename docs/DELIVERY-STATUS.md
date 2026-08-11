@@ -15,7 +15,7 @@
 | D2 | ADR — SQLite over Postgres | ⬜ | — | Pending SWE |
 | D3 | ADR — RAG over fine-tuning | ✅ Done | 2026-08-11 | ADR-0003 accepted |
 | D4 | ADR — LangGraph orchestration | ✅ Done | 2026-08-11 | ADR-0004 accepted |
-| D5 | Monorepo setup + local dev | ⬜ | — | — |
+| D5 | Monorepo setup + local dev | ✅ Done | 2026-08-11 | Spec M1 completed |
 | D6 | Data ingestion pipeline | ⬜ | — | — |
 | D7 | RAG retrieval pipeline | ⬜ | — | — |
 | D8 | Orchestrator agent | ⬜ | — | — |
@@ -26,7 +26,7 @@
 | D13 | Evaluation suite | ⬜ | — | — |
 | D14 | Production deployment | ⬜ | — | — |
 
-**Progress: 3 / 14 deliverables shipped.**
+**Progress: 4 / 14 deliverables shipped.**
 
 ---
 
@@ -40,3 +40,5 @@
 | 2026-08-11 | Runbook scaffolding | — | Templates, SPEC-INDEX, SPEC-CONTEXT created |
 | 2026-08-11 | ADR-0003 (RAG over fine-tuning) | — | D3 shipped |
 | 2026-08-11 | ADR-0004 (LangGraph orchestration) | — | D4 shipped |
+| 2026-08-11 | Spec M1 (Monorepo dev setup) | — | D5 shipped — unblocks AI-1 |
+
