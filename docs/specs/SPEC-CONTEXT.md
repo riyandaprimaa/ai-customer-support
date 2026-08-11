@@ -49,10 +49,11 @@ User (React) → FastAPI Backend → Orchestrator Agent → {Billing | Technical
 | ADR-0001 — Use Gemini free tier | 🟩 | 2026-08-11 |
 | ADR-0003 — RAG over Fine-Tuning | 🟩 | 2026-08-11 |
 | ADR-0004 — LangGraph for Multi-Agent Orchestration | 🟩 | 2026-08-11 |
+| Spec M1 — Monorepo setup & local dev environment | 🟩 | 2026-08-11 |
 
 ### In progress
 
-- Preparing Spec AI-1 (Data Ingestion & ChromaDB Pipeline) & Spec M1 (Local dev environment).
+- Ready to start Spec AI-1 (Data Ingestion & ChromaDB Pipeline).
 
 ### What was learned
 

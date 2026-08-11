@@ -35,7 +35,7 @@
 
 | # | Code | Title | Status | Prereq | Unblocks | D# | Owner | File |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **M1** | Monorepo setup + local dev environment | ⬜ | ADR-0001–0004 | AI-1, API-1, WEB-1 | D5 | Both | *to write* |
+| 1 | **M1** | Monorepo setup + local dev environment | 🟩 | ADR-0001–0004 | AI-1, API-1, WEB-1 | D5 | Both | [`2026-08-11-spec-M1-monorepo-dev-environment.md`](./2026-08-11-spec-M1-monorepo-dev-environment.md) |
 
 ### Phase 1 — AI Pipeline
 
