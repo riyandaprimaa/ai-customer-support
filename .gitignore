@@ -1,0 +1,41 @@
+# Environment
+.env
+.env.local
+.env.*.local
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+node_modules/
+dist/
+build/
+*.egg-info/
+
+# Database
+*.db
+*.sqlite3
+
+# ChromaDB
+chroma_data/
+
+# Secrets
+secrets/
+
+# Data (large files)
+data/raw/*.csv
+data/raw/*.parquet
+
+# uv
+.python-version
