@@ -76,16 +76,70 @@ git branch -d feature/ai-2-rag-pipeline
 
 ---
 
-## 4. Useful Git Commands Cheat Sheet
+## 4. Pull Request (PR) Naming Standards
 
+To ensure clean, uniform repository history and portfolio presentation, all Pull Requests must follow this standardized naming convention:
+
+### PR Title Formula:
+`<type>(<scope>): [<spec-code>] <Short descriptive summary>`
+
+| Scope | Spec / Deliverable | Standard PR Title Example |
+|---|---|---|
+| **`ai`** | Spec AI-1 | `feat(ai): [AI-1] implement data ingestion pipeline and ChromaDB vector store` |
+| **`ai`** | Spec AI-2 | `feat(ai): [AI-2] implement RAG retrieval pipeline and multi-LLM fallback` |
+| **`ai`** | Spec AI-3 | `feat(ai): [AI-3] implement orchestrator agent and intent router` |
+| **`ai`** | Spec AI-4 | `feat(ai): [AI-4] implement 3 specialist agents and conversation memory` |
+| **`api`** | Spec API-1 | `feat(api): [API-1] initialize FastAPI backend and SQLite database` |
+| **`web`** | Spec WEB-1 | `feat(web): [WEB-1] create React chat UI and streaming SSE` |
+| **`int`** | Spec INT-1 | `feat(int): [INT-1] connect AI pipeline to FastAPI chat endpoint` |
+| **`monorepo`** / **`docs`** | Spec M1 / ADRs | `feat(monorepo): [M1] setup monorepo structure and local dev environment` |
+| **`chore`** | Maintenance | `chore(repo): update dependencies and gitignore` |
+
+---
+
+## 5. Useful Git Commands Cheat Sheet
+
+### 📦 Staging & Unstaging Changes
+| Action | Command |
+|---|---|
+| **Check current status** | `git status` |
+| **Stage specific file** | `git add <file-path>` |
+| **Stage all changes** | `git add .` |
+| **Un-add / Unstage a specific file** | `git restore --staged <file-path>` |
+| **Un-add / Unstage all files** | `git restore --staged .` |
+
+### 🗑️ Discarding Changes
+| Action | Command |
+|---|---|
+| **Discard unstaged modifications in a file** | `git restore <file-path>` |
+| **Discard all unstaged modifications** | `git restore .` |
+| **Remove all untracked files/folders** | `git clean -fd` |
+
+### 🗄️ Stashing (Temporarily Shelve Work)
+| Action | Command |
+|---|---|
+| **Stash all uncommitted changes** | `git stash` |
+| **Stash with a descriptive message** | `git stash save "wip: halfway through rag retriever"` |
+| **Stash a specific file only** | `git stash push <file-path>` |
+| **Restore most recent stash and remove it** | `git stash pop` |
+| **View all stashes** | `git stash list` |
+| **Delete most recent stash without applying** | `git stash drop` |
+
+### 🌿 Branch Management & Switching
 | Action | Command |
 |---|---|
 | **Create and switch to new branch** | `git checkout -b <branch-name>` |
-| **Check branch status** | `git status` |
-| **Stage all changes** | `git add .` |
-| **Commit with message** | `git commit -m "feat(scope): message"` |
-| **Push new branch to remote** | `git push -u origin <branch-name>` |
-| **Delete local branch** | `git branch -d <branch-name>` (or `-D` to force) |
-| **Delete remote branch** | `git push origin --delete <branch-name>` |
-| **Switch back to main** | `git checkout main` |
-| **Pull latest changes** | `git pull origin main` |
+| **Switch to an existing branch** | `git checkout <branch-name>` |
+| **List all local branches** | `git branch` |
+| **Delete local branch (safe)** | `git branch -d <branch-name>` |
+| **Force delete local branch** | `git branch -D <branch-name>` |
+| **Delete remote branch on GitHub** | `git push origin --delete <branch-name>` |
+
+### 🔍 Diffs & History
+| Action | Command |
+|---|---|
+| **View unstaged changes diff** | `git diff` |
+| **View staged changes diff** | `git diff --staged` |
+| **View concise commit history** | `git log --oneline -n 10` |
+| **Undo last commit (keep changes staged)** | `git reset --soft HEAD~1` |
+| **Undo last commit (keep changes unstaged)** | `git reset HEAD~1` |
