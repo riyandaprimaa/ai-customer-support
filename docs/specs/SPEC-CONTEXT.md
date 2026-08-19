@@ -36,6 +36,7 @@ User (React) → FastAPI Backend → Orchestrator Agent → {Billing | Technical
 | [`../SYSTEM_ARCHITECTURE.md`](../SYSTEM_ARCHITECTURE.md) | The system architecture source of truth |
 | [`../adr/README.md`](../adr/README.md) | ADR index — all architectural decisions |
 | [`../integrations/api-contract.md`](../integrations/api-contract.md) | API contract between AI pipeline and backend |
+| [`../GIT_WORKFLOW.md`](../GIT_WORKFLOW.md) | Git branching, commit guidelines, and PR workflow |
 
 ---
 
@@ -50,10 +51,12 @@ User (React) → FastAPI Backend → Orchestrator Agent → {Billing | Technical
 | ADR-0003 — RAG over Fine-Tuning | 🟩 | 2026-08-11 |
 | ADR-0004 — LangGraph for Multi-Agent Orchestration | 🟩 | 2026-08-11 |
 | Spec M1 — Monorepo setup & local dev environment | 🟩 | 2026-08-11 |
+| Spec AI-1 — Data Ingestion & ChromaDB Pipeline | 🟩 | 2026-08-11 |
 
 ### In progress
 
-- Ready to start Spec AI-1 (Data Ingestion & ChromaDB Pipeline).
+- Ready to start Spec AI-2 (RAG Retrieval Pipeline).
+
 
 ### What was learned
 

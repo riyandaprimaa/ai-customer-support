@@ -35,6 +35,24 @@ File name: `YYYY-MM-DD-spec-[CODE][N]-[theme-slug].md`
 
 ---
 
+## Git Branching & Versioning Convention
+
+Every spec follows an isolated feature branch lifecycle:
+
+1. **Branch Naming:** `feature/<spec-code>-<theme-slug>`
+   - Example: `feature/ai-1-data-pipeline`, `feature/api-1-fastapi-backend`
+2. **Atomic Commits:** A feature branch must bundle the **code + unit tests + spec markdown updates + developer docs/notebooks** together.
+3. **Branch Lifecycle:**
+   - Create branch: `git checkout -b feature/<spec-code>-<theme-slug>` from updated `main`.
+   - Implement, test (`uv run pytest` / `npm test`), and verify checklist.
+   - Update `SPEC-INDEX.md` status (`🟩`) and `DELIVERY-STATUS.md`.
+   - Push and open a Pull Request into `main`.
+   - Merge and delete the feature branch.
+
+> For complete details on Git conventions and commit formatting, see [`../GIT_WORKFLOW.md`](../GIT_WORKFLOW.md).
+
+---
+
 ## Metadata Header
 
 Every spec starts with this block:

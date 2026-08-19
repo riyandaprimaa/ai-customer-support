@@ -41,7 +41,7 @@
 
 | # | Code | Title | Status | Prereq | Unblocks | D# | Owner | File |
 |---|---|---|---|---|---|---|---|---|
-| 2 | **AI-1** | Data ingestion + embeddings + ChromaDB | ⬜ | M1 | AI-2 | D6 | AI Eng | *to write* |
+| 2 | **AI-1** | Data ingestion + embeddings + ChromaDB | 🟩 | M1 | AI-2 | D6 | AI Eng | [`2026-08-11-spec-AI1-data-ingestion-pipeline.md`](./2026-08-11-spec-AI1-data-ingestion-pipeline.md) |
 | 3 | **AI-2** | RAG retrieval pipeline | ⬜ | AI-1 | AI-3 | D7 | AI Eng | *to write* |
 | 4 | **AI-3** | Orchestrator agent (intent classification) | ⬜ | AI-2 | AI-4 | D8 | AI Eng | *to write* |
 | 5 | **AI-4** | 3 specialist agents + conversation memory | ⬜ | AI-3 | INT-1 | D9 | AI Eng | *to write* |
