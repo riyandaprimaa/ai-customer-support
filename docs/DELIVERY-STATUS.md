@@ -17,7 +17,7 @@
 | D4 | ADR — LangGraph orchestration | ✅ Done | 2026-08-11 | ADR-0004 accepted |
 | D5 | Monorepo setup + local dev | ✅ Done | 2026-08-11 | Spec M1 completed |
 | D6 | Data ingestion pipeline | ✅ Done | 2026-08-11 | Spec AI-1 completed |
-| D7 | RAG retrieval pipeline | ⬜ | — | — |
+| D7 | RAG retrieval pipeline | ✅ Done | 2026-08-21 | Spec AI-2 completed (D7 shipped) |
 | D8 | Orchestrator agent | ⬜ | — | — |
 | D9 | 3 specialist agents | ⬜ | — | — |
 | D10 | FastAPI backend | ⬜ | — | — |
@@ -26,7 +26,7 @@
 | D13 | Evaluation suite | ⬜ | — | — |
 | D14 | Production deployment | ⬜ | — | — |
 
-**Progress: 5 / 14 deliverables shipped.**
+**Progress: 6 / 14 deliverables shipped.**
 
 ---
 
@@ -42,5 +42,6 @@
 | 2026-08-11 | ADR-0004 (LangGraph orchestration) | — | D4 shipped |
 | 2026-08-11 | Spec M1 (Monorepo dev setup) | — | D5 shipped — unblocks AI-1 |
 | 2026-08-11 | Spec AI-1 (Data Ingestion Pipeline) | — | D6 shipped — unblocks AI-2 |
+| 2026-08-21 | Spec AI-2 (RAG Retrieval Pipeline) | — | D7 shipped — unblocks AI-3 |
 
 

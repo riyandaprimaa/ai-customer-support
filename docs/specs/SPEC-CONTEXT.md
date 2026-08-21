@@ -52,16 +52,18 @@ User (React) → FastAPI Backend → Orchestrator Agent → {Billing | Technical
 | ADR-0004 — LangGraph for Multi-Agent Orchestration | 🟩 | 2026-08-11 |
 | Spec M1 — Monorepo setup & local dev environment | 🟩 | 2026-08-11 |
 | Spec AI-1 — Data Ingestion & ChromaDB Pipeline | 🟩 | 2026-08-11 |
+| Spec AI-2 — RAG Retrieval Pipeline & Multi-LLM Fallback | 🟩 | 2026-08-21 |
 
 ### In progress
 
-- Ready to start Spec AI-2 (RAG Retrieval Pipeline).
-
+- Ready to start **Spec AI-3 (Orchestrator Agent & Intent Classification)**.
 
 ### What was learned
 
 - **AI Phase 0 ADRs complete:** Gemini API (ADR-0001), RAG with ChromaDB (ADR-0003), and LangGraph StateGraph (ADR-0004) lock the AI engineering architecture.
 - **RAG embedding choice:** `sentence-transformers/all-MiniLM-L6-v2` chosen for 80MB lightweight CPU footprint.
+- **ChromaDB protocol:** Custom embedding functions inherit from `chromadb.EmbeddingFunction` with `.name()`.
+- **Pytest discovery:** Configured `pythonpath = ["."]` in `pyproject.toml` for seamless test execution across modules.
 
 ---
 
