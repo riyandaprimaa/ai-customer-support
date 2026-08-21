@@ -9,7 +9,7 @@ from src.pipelines.knowledge_base import KnowledgeBaseManager
 
 @pytest.fixture
 def temp_kb():
-    with tempfile.TemporaryDirectory() as tmp_dir:
+    with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as tmp_dir:
         kb = KnowledgeBaseManager(persist_directory=tmp_dir)
         yield kb
 

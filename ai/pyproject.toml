@@ -25,3 +25,8 @@ package = false
 dev = [
     "ipykernel>=7.3.0",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
